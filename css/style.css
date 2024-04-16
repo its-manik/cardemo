@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: MyriadReg;
+}
+
+@font-face {
+  font-family: MyriadBold;
+  src: url(../font/MYRIADPRO-BOLD.OTF);
+}
+@font-face {
+  font-family: MyriadReg;
+  src: url(../font/MYRIADPRO-REGULAR.OTF);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+.topgred {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  height: 400px;
+  display: block;
+  z-index: 1;
+}
+.hero {
+  width: 100%;
+  height: 100%;
+  background: url(../images/Calque\ 206.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  color: var(--white);
+  padding: 50px;
+  position: relative;
+  z-index: 100;
+}
+
+#hero .container {
+  height: 100vh !important;
+}
+
+.heroFlex {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.heroLeft {
+  align-self: flex-start;
+  /* margin-right: 50px; */
+  /* width: 100%; */
+}
+
+.heroLeft h1 {
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 50px;
+  font-family: MyriadBold;
+}
+.heroLeft h4 {
+  font-size: 27px;
+}
+
+.heroLogos {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.heroLogos img {
+  width: 70px;
+}
+
+.heroRight {
+  position: relative;
+  z-index: 200;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.heroRight h2 {
+  font-size: 60px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: -15px;
+}
+
+.heroRight h3 {
+  font-size: 33px;
+  font-weight: 500;
+}
+
+.heroRight p {
+  font-size: 26px;
+  font-weight: 600;
+  min-width: 400px;
+  color: #ee96bb;
+  text-align: right;
+}
+
+.formHeading {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 35px;
+  margin-top: 30px;
+}
+
+.formSub {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.mainForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  gap: 20px;
+}
+
+.formDiv input,
+.formDiv button {
+  width: 100%;
+  padding: 18px 10px;
+  font-size: 18px;
+  color: #000;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+.formDiv button {
+  background: var(--black);
+  color: var(--white);
+  font-size: 20px;
+}
+
+.formDiv span {
+  text-align: right;
+  align-self: flex-end;
+  color: #888888;
+  font-size: 18px;
+}
+
+#speed {
+  padding-top: 50px;
+}
+
+.speedWrapper {
+  width: 100%;
+}
+
+.speedWrapper img {
+  width: 100%;
+}
+
+.speedHeading {
+  background: var(--black);
+  padding: 20px 190px;
+  color: var(--white);
+  text-align: center;
+  font-size: 30px;
+}
+
+#renault .container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.renaultTop {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.relaultLogo {
+  /* gap: 10px; */
+  display: flex;
+  align-items: center;
+}
+
+.relaultLogo img {
+  width: 40%;
+}
+
+.relaultLogo p {
+  font-size: 30px;
+  max-width: 40%;
+  text-align: center;
+}
+
+.renaultHeading h2 {
+  font-size: 45px;
+}
+.renaultHeading p {
+  font-size: 25px;
+}
+
+.renaultMiddle h2 {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.carDetailsWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 40px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.carDetails {
+  border-left: 3px solid var(--black);
+  padding-left: 10px;
+}
+
+.carDetails p {
+  font-size: 20px;
+}
+.carDetails h3 {
+  font-size: 40px;
+}
+
+.detailsImg {
+  width: 100%;
+  height: 500px;
+}
+
+.detailsImg img {
+  width: 100%;
+  height: inherit;
+}
+
+#recyclable {
+  padding: 20px 0;
+}
+
+.sectionHeading {
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+
+.sectionHeading h2 {
+  font-size: 55px;
+}
+
+.sectionHeading p {
+  font-size: 20px;
+}
+
+.recycleImage {
+  width: 100%;
+  height: 400px;
+}
+
+.recycleImage img {
+  height: 100%;
+  width: 100%;
+}
+
+.techLogos {
+  margin-left: 30px;
+  width: 400px;
+}
+
+.techLogos img {
+  width: 100%;
+}
+
+.techImage {
+  margin-top: 30px;
+  width: 100%;
+  height: 500px;
+}
+
+.techImage img {
+  width: 100%;
+  height: 100%;
+}
+
+#jusqu .sectionHeading {
+  padding-top: 30px;
+}
+
+.jusquImage {
+  width: 90%;
+  margin: 0 auto;
+  height: 250px;
+}
+
+.jusquImage img {
+  width: 100%;
+  height: 100%;
+}
+
+#footerText {
+  margin-top: 50px;
+}
+
+#footerText .container {
+  color: var(--white);
+  padding: 30px;
+  font-size: 22px;
+  background: var(--black);
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 405px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .topgred {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 150px;
+    height: 160px;
+  }
+
+  .heroHeading h1 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .heroHeading h4 {
+    font-size: 16px;
+  }
+
+  .heroLogos img {
+    width: 30px;
+  }
+
+  .jcc {
+    width: 70px !important;
+  }
+
+  .heroRight h2 {
+    font-size: 22px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  #hero .container {
+    padding: 0 !important;
+    height: auto !important;
+  }
+
+  .heroRight p {
+    font-size: 16px;
+    min-width: 330px;
+  }
+  .heroRight {
+    align-items: flex-start;
+    padding: 0 20px;
+    padding-right: 0;
+  }
+
+  .heroRight h2 {
+    padding: 0;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .heroFlex {
+    flex-direction: column;
+  }
+
+  .formHeading {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .formSub {
+    font-size: 20px;
+  }
+
+  .formDiv {
+    width: 100%;
+  }
+
+  .speedHeading {
+    padding: 20px;
+    font-size: 23px;
+  }
+
+  .renaultTop h2 {
+    font-size: 30px;
+  }
+
+  .renaultHeading {
+    width: 100%;
+  }
+
+  .renaultHeading p {
+    font-size: 18px;
+  }
+
+  .relaultLogo p {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .relaultLogo {
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .renaultMiddle h2 {
+    font-size: 30px;
+  }
+
+  .carDetailsWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .carDetails h3 {
+    font-size: 25px;
+  }
+
+  .carDetails p {
+    font-size: 18px;
+  }
+
+  .detailsImg {
+    height: 280px;
+  }
+
+  .recycleImage{
+    height: 200px;
+  }
+
+  .sectionHeading {
+    padding: 0;
+  }
+
+  .sectionHeading h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .techLogos {
+    margin: 0;
+    width: auto;
+  }
+
+  .techImage {
+    height: 280px;
+  }
+
+  .jusquImage {
+    height: 200px;
+  }
+
+  #footerText p{
+    font-size: 18px;
+  }
+}
